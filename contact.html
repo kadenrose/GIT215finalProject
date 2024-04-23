@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Kaden Rose">
+        <meta name="description" content="Preserved Resort Contact Page">
+
+        <link rel="icon" href="images/icon.png.png" type="image/x-icon">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Preserved Resort</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accomodations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- <img src="images/swiss-valley.jpg" alt="Preserved Resort Swiss Valley"> -->
+        </header>
+
+        <main id="contactpage">
+            <section id="headingandp">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!<br>Required fields marked with <span class="required">*</span></p>
+                <img src="images/swiss-peak.jpg" alt="Swiss Mountain Peak">
+            </section>
+
+            <section id="contactform">
+                <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                    <label for="name">Full Name<span class="required">*</span></label>
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="my-email">Email Address<span class="required">*</span></label>
+                    <input type="email" name="my-email" id="my-email" required>
+
+                    <label for="my-phone">Phone Number</label>
+                    <input type="tel" name="my-phone" id="my-phone">
+
+                    <fieldset>
+                        <legend>Preferred Method of Contact<span class="required">*</span></legend>
+                        <div class="emailradio">
+                            <input type="radio" name="contact-pref" id="pref-email" checked>
+                            <label for="pref-email">Email</label>
+                        </div>
+                        <div class="phoneradio">
+                            <input type="radio" name="contact-pref" id="pref-phone">
+                            <label for="pref-phone">Phone</label>
+                        </div>
+                    </fieldset>
+
+                    <label for="comments">Comments<span class="required">*</span></label>
+                    <textarea name="comments" id="comments" required></textarea>
+                
+                    <input type="submit" name="submit-button" id="submit-button" value="Submit">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright &copy;2024 - Preserved Resort</p>
+
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>
